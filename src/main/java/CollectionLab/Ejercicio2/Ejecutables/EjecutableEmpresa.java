@@ -24,7 +24,7 @@ public class EjecutableEmpresa {
 
         imprimirListaProductos(productos);
 
-        String codigoBuscar="220";
+        String codigoBuscar="2200";
 
         empresa.buscarProducto(codigoBuscar,productos);
 
