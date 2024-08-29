@@ -7,8 +7,8 @@ public class Persona implements Comparable<Persona>{
 
     @Override
     public int compareTo(Persona otraPersona) {
-        return Integer.compare(this.edad, otraPersona.edad);
-//        return this.nombre.compareTo(otraPersona.nombre);
+//        return Integer.compare(this.edad, otraPersona.edad);
+        return this.nombre.compareTo(otraPersona.nombre);
     }
     public Persona(String nombre, int edad, String sexo) {
         this.nombre = nombre;
