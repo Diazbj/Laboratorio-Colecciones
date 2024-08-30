@@ -1,19 +1,19 @@
-package CollectionLab.Ejercicio1.Model;
+package CollectionLab.Model;
 
 public class Persona implements Comparable<Persona>{
     private String nombre;
     private int edad;
-    private String sexo;
+    private String Genero;
 
     @Override
     public int compareTo(Persona otraPersona) {
 //        return Integer.compare(this.edad, otraPersona.edad);
         return this.nombre.compareTo(otraPersona.nombre);
     }
-    public Persona(String nombre, int edad, String sexo) {
+    public Persona(String nombre, int edad, String Genero) {
         this.nombre = nombre;
         this.edad = edad;
-        this.sexo = sexo;
+        this.Genero = Genero;
 
     }
     public String getNombre() {
@@ -29,11 +29,11 @@ public class Persona implements Comparable<Persona>{
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    public String getSexo() {
-        return sexo;
+    public String getGenero() {
+        return Genero;
     }
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
+    public void setGenero(String genero) {
+        this.Genero = genero;
     }
 
 }

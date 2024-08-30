@@ -1,7 +1,7 @@
 package CollectionLab.Ejercicio2.Ejecutables;
 
-import CollectionLab.Ejercicio2.Model.Empresa;
-import CollectionLab.Ejercicio2.Model.Producto;
+import CollectionLab.Model.Empresa;
+import CollectionLab.Model.Producto;
 
 import java.util.TreeSet;
 

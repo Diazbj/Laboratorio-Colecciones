@@ -1,9 +1,11 @@
 package CollectionLab.Ejercicio1.Ejecutables;
 
-import CollectionLab.Ejercicio1.Model.Persona;
+import CollectionLab.Model.Persona;
+import CollectionLab.Ejercicio1.Util.ComparadorPorEdad;
+import CollectionLab.Ejercicio1.Util.ComparadorPorGenero;
+import CollectionLab.Ejercicio1.Util.ComparadorPorNombre;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -33,12 +35,24 @@ public class EjecutablePersona {
 
 
         Collections.sort(listaPersonas);
-        System.out.println("Lista Ordenado 1 ");
+        System.out.println("Lista Ordenado por nombre 1 ");
         imprimirLista(listaPersonas);
 
 
         ordenarPorEdad(listaPersonas);
-        System.out.println("Lista Ordenado 2 ");
+        System.out.println("Lista Ordenado edad 1 ");
+        imprimirLista(listaPersonas);
+
+        Collections.sort(listaPersonas,new ComparadorPorNombre());
+        System.out.println("Lista Ordenado nombre 2 ");
+        imprimirLista(listaPersonas);
+
+        Collections.sort(listaPersonas,new ComparadorPorEdad());
+        System.out.println("Lista Ordenado edad 2 ");
+        imprimirLista(listaPersonas);
+
+        Collections.sort(listaPersonas,new ComparadorPorGenero());
+        System.out.println("Lista Ordenado genero 1 ");
         imprimirLista(listaPersonas);
 
 

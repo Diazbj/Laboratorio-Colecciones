@@ -1,4 +1,4 @@
-package CollectionLab.Ejercicio2.Model;
+package CollectionLab.Model;
 
 public class Producto implements Comparable<Producto> {
     private String nombre;

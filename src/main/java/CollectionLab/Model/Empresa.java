@@ -1,7 +1,5 @@
-package CollectionLab.Ejercicio2.Model;
+package CollectionLab.Model;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.TreeSet;
 
 public class Empresa {
