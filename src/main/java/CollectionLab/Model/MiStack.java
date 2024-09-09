@@ -32,17 +32,4 @@ public class MiStack<Objeto> {
         System.out.println("Contenido de la pila: " + stack);
     }
 
-    public Objeto pop() {
-        Objeto objeto = stack.pop();
-        return objeto;
-
-    }
-
-    public Objeto peek() {
-        return stack.peek();
-
-    }
-    public boolean isEmpty() {
-        return stack.isEmpty();
-    }
 }
